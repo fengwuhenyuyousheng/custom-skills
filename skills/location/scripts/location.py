@@ -43,14 +43,6 @@ def get_location_season() -> str:
         return "冬季"
     else:
         return None
-
-def get_current_date()->str:
-    """
-    获取当前日期
-
-    Returns:返回当前日期 格式为YYYY-MM-DD
-    """
-    return datetime.datetime.now().strftime("%Y-%m-%d")
     
     
 
@@ -121,13 +113,8 @@ def main():  # 定义主函数 main
     if season is None:
         print("获取季节失败。")
         return
-    # 获取当前日期
-    date = get_current_date()
-    if date is None:
-        print("获取日期失败。")
-        return
     # 打印结果
-    print(f"当前城市是：{city}，当前季节是：{season}，当前日期是：{date}")
+    print(f"当前城市是：{city}，当前季节是：{season}")
     
 
 

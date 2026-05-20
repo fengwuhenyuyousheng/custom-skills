@@ -1,0 +1,7 @@
+
+# config 
+.env
+.env.local
+.env.*.local
+*.local.env
+*.key
